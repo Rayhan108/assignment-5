@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
@@ -21,8 +22,170 @@
 
 
     </header>
-   
-   
+    <!-- Shape Card section -->
+    <div class="container">
+        <div class="row">
+          <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
+            <div class="card text-info-emphasis" style="width: 18rem;">
+              <img class="img-fluid" src="images/triangle.png" class="card-img-top " alt="...">
+              
+              <div class="card-body">
+                <h5 class="card-title text-center">Triangle</h5>
+              </div>
+              <p class="card-text text-center">
+                Area(A)=0.5*b*h
+              </p>
+              <div class="d-flex justify-content-center mb-4">
+                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
+                  <p class="mt-2 ms-1 me-2">cm</p>
+                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="h">
+                  <p class="mt-2 ms-1">cm</p>
+              </div>
+              <div class="text-center mb-3">
+                <button class="btn  text-light bg-primary ">
+                  Calculate
+                </button>
+            </div>
+          </div>
+          </div>
+          <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
+            <div class="card text-info-emphasis" style="width: 18rem;">
+              <img class="img-fluid" src="images/rectangle.png" class="card-img-top " alt="...">
+              
+              <div class="card-body">
+                <h5 class="card-title text-center">Rectangle</h5>
+              </div>
+              <p class="card-text text-center">
+                Area(A)=W*I
+              </p>
+              <div class="d-flex justify-content-center mb-4">
+                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="W">
+                  <p class="mt-2 ms-1 me-2">cm</p>
+                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="I">
+                  <p class="mt-2 ms-1">cm</p>
+              </div>
+              <div class="text-center mb-3">
+                <button class="btn  text-light bg-primary ">
+                  Calculate
+                </button>
+            </div>
+          </div>
+          </div>
+          <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
+            <div class="card text-info-emphasis" style="width: 18rem;">
+              <img class="img-fluid" src="images/parallelogram.png" class="card-img-top " alt="...">
+              
+              <div class="card-body">
+                <h5 class="card-title text-center">Parellelogram</h5>
+              </div>
+              <p class="card-text text-center">
+                Area(A)=b*h
+              </p>
+              <div class="d-flex justify-content-center mb-4">
+                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
+                  <p class="mt-2 ms-1 me-2">cm</p>
+                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="h">
+                  <p class="mt-2 ms-1">cm</p>
+              </div>
+              <div class="text-center mb-3">
+                <button class="btn  text-light bg-primary ">
+                  Calculate
+                </button>
+            </div>
+          </div>
+    
+          </div>
+          <!-- Calculated ans card  -->
+          <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
+          <div class="card rounded-4 ">
+                    
+            <div class="card-body text-center">
+              <h5 class="card-title">Area Calculation</h5><hr>
+              <!-- <p class="card-text"> -->
+              
+            </div>
+          </div>
+        </div>
+         
+        </div>
+      </div>
+
+        <!--  -->
+        <div class="container">
+            <div class="row">
+              <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
+                <div class="card text-info-emphasis" style="width: 18rem;">
+                  <img class="img-fluid" src="images/rhombus.png" class="card-img-top " alt="...">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Rhombus</h5>
+                  </div>
+                  <p class="card-text text-center">
+                    Area(A)=0.5*d1*d2
+                  </p>
+                  <div class="d-flex justify-content-center mb-4">
+                      <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="d1">
+                      <p class="mt-2 ms-1 me-2">cm</p>
+                      <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="d2">
+                      <p class="mt-2 ms-1">cm</p>
+                  </div>
+                  <div class="text-center mb-3">
+                    <button class="btn  text-light bg-primary ">
+                      Calculate
+                    </button>
+                </div>
+              </div>
+              </div>
+              <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
+                <div class="card text-info-emphasis" style="width: 18rem;">
+                  <img class="img-fluid" src="images/pentagon.png" class="card-img-top " alt="...">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Pentagon</h5>
+                  </div>
+                  <p class="card-text text-center">
+                    Area(A)=0.5*p*b
+                  </p>
+                  <div class="d-flex justify-content-center mb-4">
+                      <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="p">
+                      <p class="mt-2 ms-1 me-2">cm</p>
+                      <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
+                      <p class="mt-2 ms-1">cm</p>
+                  </div>
+                  <div class="text-center mb-3">
+                    <button class="btn  text-light bg-primary ">
+                      Calculate
+                    </button>
+                </div>
+              </div>
+              </div>
+              <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
+                <div class="card text-info-emphasis" style="width: 18rem;">
+                  <img class="img-fluid" src="images/ellipse.png" class="card-img-top " alt="...">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Ellipse</h5>
+                  </div>
+                  <p class="card-text text-center">
+                    Area(A)=3.1416*a*b
+                  </p>
+                  <div class="d-flex justify-content-center mb-4">
+                      <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="a">
+                      <p class="mt-2 ms-1 me-2">cm</p>
+                      <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
+                      <p class="mt-2 ms-1">cm</p>
+                  </div>
+                  <div class="text-center mb-3">
+                    <button class="btn  text-light bg-primary ">
+                      Calculate
+                    </button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+         </section>
+      <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
