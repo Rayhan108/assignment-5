@@ -25,7 +25,7 @@ document.getElementById('rectangle-area').addEventListener('click',function(){
     const tableContainer = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td style="padding=2px">${1}.</td>
+    <td style="padding=2px">${2}.</td>
     <td style="mr-2px:">rectangle</td> 
     <td style="margin-right:2px">${rectangleArea} cm<sup>2</sup></td> 
     <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
@@ -43,7 +43,7 @@ document.getElementById('parallelogram-area').addEventListener('click',function(
     const tableContainer = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td style="padding=2px">${1}.</td>
+    <td style="padding=2px">${3}.</td>
     <td style="mr-2px:">parallelogram</td> 
     <td style="margin-right:2px">${parallelogramArea} cm<sup>2</sup></td> 
     <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
@@ -60,9 +60,26 @@ document.getElementById('rhombus-area').addEventListener('click',function(){
     const tableContainer = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td style="padding=2px">${1}.</td>
+    <td style="padding=2px">${4}.</td>
     <td style="mr-2px:">rhombus</td> 
     <td style="margin-right:2px">${rhombusArea} cm<sup>2</sup></td> 
+    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    `
+      tableContainer.appendChild(tr);
+})
+// pentagon area-------------------------------
+
+document.getElementById('pentagon-area').addEventListener('click',function(){
+    const pentagonPerimeter =getElementValueById('pentagon-perameter');
+    const pentagonBase = getElementValueById('pentagon-base');
+    const pentagonArea =0.5*pentagonPerimeter*pentagonBase;
+ 
+    const tableContainer = document.getElementById('table-container');
+    const tr = document.createElement('tr');
+    tr.innerHTML=`
+    <td style="padding=2px">${5}.</td>
+    <td style="mr-2px:">pentagon</td> 
+    <td style="margin-right:2px">${pentagonArea} cm<sup>2</sup></td> 
     <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
     `
       tableContainer.appendChild(tr);
