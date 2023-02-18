@@ -25,6 +25,7 @@
     <!-- Shape Card section -->
     <div class="container">
         <div class="row">
+          <!-- Traingle-------------------- -->
           <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
             <div class="card text-info-emphasis" style="width: 18rem;">
               <img class="img-fluid" src="images/triangle.png" class="card-img-top " alt="...">
@@ -36,21 +37,23 @@
                 Area(A)=0.5*b*h
               </p>
               <div class="d-flex justify-content-center mb-4">
-                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
+                  <input type="text" id="base" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
                   <p class="mt-2 ms-1 me-2">cm</p>
-                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="h">
+                  <input type="text" id="height" class="p-2" style="height: 50px;width: 100px;" placeholder="h">
                   <p class="mt-2 ms-1">cm</p>
               </div>
               <div class="text-center mb-3">
-                <button class="btn  text-light bg-primary ">
+                <button id="triangle-area" class="btn  text-light bg-primary ">
                   Calculate
                 </button>
             </div>
           </div>
           </div>
+<!-- rectangle--------------------------------- -->
+
           <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
             <div class="card text-info-emphasis" style="width: 18rem;">
-              <img class="img-fluid" src="images/rectangle.png" class="card-img-top " alt="...">
+              <img class="img-fluid mt-5" src="images/rectangle.png" class="card-img-top " alt="...">
               
               <div class="card-body">
                 <h5 class="card-title text-center">Rectangle</h5>
@@ -59,36 +62,37 @@
                 Area(A)=W*I
               </p>
               <div class="d-flex justify-content-center mb-4">
-                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="W">
+                  <input type="text" id="width" class="p-2" style="height: 50px;width: 100px;" placeholder="W">
                   <p class="mt-2 ms-1 me-2">cm</p>
-                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="I">
+                  <input type="text" id="rectangle-height" class="p-2" style="height: 50px;width: 100px;" placeholder="I">
                   <p class="mt-2 ms-1">cm</p>
               </div>
               <div class="text-center mb-3">
-                <button class="btn  text-light bg-primary ">
+                <button id="rectangle-area" class="btn  text-light bg-primary ">
                   Calculate
                 </button>
             </div>
           </div>
           </div>
+          <!-- parallelogram------------------------------ -->
           <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
             <div class="card text-info-emphasis" style="width: 18rem;">
-              <img class="img-fluid" src="images/parallelogram.png" class="card-img-top " alt="...">
+              <img class="img-fluid mt-5" src="images/parallelogram.png" class="card-img-top " alt="...">
               
               <div class="card-body">
-                <h5 class="card-title text-center">Parellelogram</h5>
+                <h5 class="card-title text-center mt-3">Parellelogram</h5>
               </div>
               <p class="card-text text-center">
                 Area(A)=b*h
               </p>
               <div class="d-flex justify-content-center mb-4">
-                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
+                  <input type="text" id="parallelogram-base" class="p-2" style="height: 50px;width: 100px;" placeholder="b">
                   <p class="mt-2 ms-1 me-2">cm</p>
-                  <input type="text" class="p-2" style="height: 50px;width: 100px;" placeholder="h">
+                  <input type="text" id="parallelogram-height" class="p-2" style="height: 50px;width: 100px;" placeholder="h">
                   <p class="mt-2 ms-1">cm</p>
               </div>
               <div class="text-center mb-3">
-                <button class="btn  text-light bg-primary ">
+                <button id="parallelogram-area" class="btn  text-light bg-primary ">
                   Calculate
                 </button>
             </div>
@@ -100,7 +104,65 @@
           <div class="card rounded-4 ">
                     
             <div class="card-body text-center">
-              <h5 class="card-title">Area Calculation</h5><hr>
+              <h5 class="card-title">Area Calculation</h5><hr class="mb-2">
+              <table>
+              <thead>
+                <tbody id="table-container">
+               
+                </tbody>
+              </thead>
+                
+              </table>
+              <!-- <div class="d-flex ">
+                <div>
+                    <p>1.Triangle   <span>12cm</span> </p>
+                </div>
+                <div>
+                    <button class="btn bg-primary ms-4">Convert to m</button>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div>
+                    <p>2.Triangle   <span>12cm</span> </p>
+                </div>
+                <div>
+                    <button class="btn bg-primary ms-4">Convert to m</button>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div>
+                    <p>3.Triangle   <span>12cm</span> </p>
+                </div>
+                <div>
+                    <button class="btn bg-primary ms-4">Convert to m</button>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div>
+                    <p>4.Triangle   <span>12cm</span> </p>
+                </div>
+                <div>
+                    <button class="btn bg-primary ms-4">Convert to m</button>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div>
+                    <p>5.Triangle   <span>12cm</span> </p>
+                </div>
+                <div>
+                    <button class="btn bg-primary ms-4">Convert to m</button>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div>
+                    <p>6.Triangle   <span>12cm</span> </p>
+                </div>
+                <div>
+                    <button class="btn bg-primary ms-4">Convert to m</button>
+                </div>
+              </div> -->
+            
+               
               <!-- <p class="card-text"> -->
               
             </div>
@@ -115,7 +177,7 @@
             <div class="row">
               <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
                 <div class="card text-info-emphasis" style="width: 18rem;">
-                  <img class="img-fluid" src="images/rhombus.png" class="card-img-top " alt="...">
+                  <img class="img-fluid mt-5" src="images/rhombus.png" class="card-img-top " alt="...">
                   
                   <div class="card-body">
                     <h5 class="card-title text-center">Rhombus</h5>
@@ -161,7 +223,7 @@
               </div>
               <div class=" col-12 col-sm-6 col-md-3 mt-5 ">
                 <div class="card text-info-emphasis" style="width: 18rem;">
-                  <img class="img-fluid" src="images/ellipse.png" class="card-img-top " alt="...">
+                  <img class="img-fluid mt-5" src="images/ellipse.png" class="card-img-top " alt="...">
                   
                   <div class="card-body">
                     <h5 class="card-title text-center">Ellipse</h5>
@@ -187,5 +249,7 @@
          </section>
       <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/shape-card.js"></script>
   </body>
 </html>
