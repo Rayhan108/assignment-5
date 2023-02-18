@@ -156,9 +156,7 @@ document.getElementById('ellipse-area').addEventListener('click',function(){
     const ellipseAreaString = ellipseCalculateValue.toFixed(2);
     const ellipseArea = ellipseAreaString;
 
-   
-
- 
+  
     const tableContainer = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
@@ -171,6 +169,26 @@ document.getElementById('ellipse-area').addEventListener('click',function(){
       tableContainer.appendChild(tr);
 })
 
+// mouse hover effect-------------------------------------
+
+document.getElementById('random-color-traingle').addEventListener('mouseover',function(){
+    mouseOver('random-color-traingle');
+})
+document.getElementById('random-color-rectangle').addEventListener('mouseover',function(){
+    mouseOver('random-color-rectangle');
+})
+document.getElementById('random-color-parallelogram').addEventListener('mouseover',function(){
+    mouseOver('random-color-parallelogram');
+})
+document.getElementById('random-color-rhombos').addEventListener('mouseover',function(){
+    mouseOver('random-color-rhombos');
+})
+document.getElementById('random-color-pentagon').addEventListener('mouseover',function(){
+    mouseOver('random-color-pentagon');
+})
+document.getElementById('random-color-ellipse').addEventListener('mouseover',function(){
+    mouseOver('random-color-ellipse');
+})
 
 
 
