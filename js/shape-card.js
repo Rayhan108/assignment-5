@@ -50,3 +50,20 @@ document.getElementById('parallelogram-area').addEventListener('click',function(
     `
       tableContainer.appendChild(tr);
 })
+// rhombos area-------------------------------
+
+document.getElementById('rhombus-area').addEventListener('click',function(){
+    const rhombusArm1 =getElementValueById('rhombus-d1');
+    const rhombusArm2 = getElementValueById('rhombus-d2');
+    const rhombusArea =0.5*rhombusArm1*rhombusArm2;
+ 
+    const tableContainer = document.getElementById('table-container');
+    const tr = document.createElement('tr');
+    tr.innerHTML=`
+    <td style="padding=2px">${1}.</td>
+    <td style="mr-2px:">rhombus</td> 
+    <td style="margin-right:2px">${rhombusArea} cm<sup>2</sup></td> 
+    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    `
+      tableContainer.appendChild(tr);
+})
