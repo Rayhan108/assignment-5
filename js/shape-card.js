@@ -1,18 +1,34 @@
+// link  Blog -----------------
+document.getElementById('btn-blog').addEventListener('click',function(){
+
+    window.location.href='blog.html';
+})
+
+
+
 // traingle area---------------------------
 document.getElementById('triangle-area').addEventListener('click',function(){
     const traingleBase =getElementValueById('base');
    
     if(isNaN(traingleBase)){
         alert('please provide a valid number');
+        return;
     }else if(traingleBase<0){
         alert('please provide a positive number');
-        return;}
+        return;
+    }else if(traingleBase == ''){
+        alert('please enter a value');
+        return;
+    }
     const traingleHeight = getElementValueById('height');
     
     if(isNaN(traingleHeight)){
         alert('please provide a valid number');
     }else if(traingleHeight<0){
         alert('please provide a positive number');
+        return;
+    }else if(traingleHeight == ''){
+        alert('please enter a value');
         return;}
     const traingleAreaValue = 0.5*traingleBase*traingleHeight;
     const traingleAreaValueString = traingleAreaValue.toFixed(2);
@@ -26,7 +42,7 @@ document.getElementById('triangle-area').addEventListener('click',function(){
     <td style="padding=2px">${1}.</td>
     <td style="mr-2px:">traingle</td> 
     <td style="margin-right:2px">${traingleArea} cm<sup>2</sup></td> 
-    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    <td><button style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></button></td>
     `
       tableContainer.appendChild(tr);
 })
@@ -38,12 +54,18 @@ document.getElementById('rectangle-area').addEventListener('click',function(){
         alert('please provide a valid number');
     }else if(rectangleWidth<0){
         alert('please provide a positive number');
+        return;
+    }else if(rectangleWidth== ''){
+        alert('please enter a value');
         return;}
     const rectangleHeight = getElementValueById('rectangle-height');
     if(isNaN(rectangleHeight)){
         alert('please provide a valid number');
     }else if(rectangleHeight<0){
         alert('please provide a positive number');
+        return;
+    }else if(rectangleHeight == ''){
+        alert('please enter a value');
         return;}
     const rectangleAreaValue =rectangleWidth*rectangleHeight;
     const rectangleAreaValueString = rectangleAreaValue.toFixed(2);
@@ -57,7 +79,7 @@ document.getElementById('rectangle-area').addEventListener('click',function(){
     <td style="padding=2px">${2}.</td>
     <td style="mr-2px:">rectangle</td> 
     <td style="margin-right:2px">${rectangleArea} cm<sup>2</sup></td> 
-    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    <td><button style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></button></td>
     `
       tableContainer.appendChild(tr);
 })
@@ -78,7 +100,7 @@ document.getElementById('parallelogram-area').addEventListener('click',function(
     <td style="padding=2px">${3}.</td>
     <td style="mr-2px:">parallelogram</td> 
     <td style="margin-right:2px">${parallelogramArea} cm<sup>2</sup></td> 
-    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    <td><button style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></button></td>
     `
       tableContainer.appendChild(tr);
 })
@@ -99,7 +121,7 @@ document.getElementById('rhombus-area').addEventListener('click',function(){
     <td style="padding=2px">${4}.</td>
     <td style="mr-2px:">rhombus</td> 
     <td style="margin-right:2px">${rhombosArea} cm<sup>2</sup></td> 
-    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    <td><button style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></button></td>
     `
       tableContainer.appendChild(tr);
 })
@@ -120,7 +142,8 @@ document.getElementById('pentagon-area').addEventListener('click',function(){
     <td style="padding=2px">${5}.</td>
     <td style="mr-2px:">pentagon</td> 
     <td style="margin-right:2px">${pantagonArea} cm<sup>2</sup></td> 
-    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    <td><button style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></button></td>
+    
     `
       tableContainer.appendChild(tr);
 })
@@ -142,7 +165,12 @@ document.getElementById('ellipse-area').addEventListener('click',function(){
     <td style="padding=2px">${6}.</td>
     <td style="mr-2px:">ellipse</td> 
     <td style="margin-right:2px">${ellipseArea} cm<sup>2</sup></td> 
-    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    <td><button style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></button></td>
+   
     `
       tableContainer.appendChild(tr);
 })
+
+
+
+
