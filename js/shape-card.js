@@ -33,3 +33,20 @@ document.getElementById('rectangle-area').addEventListener('click',function(){
       tableContainer.appendChild(tr);
 })
 
+// Parellelogram area-------------------------------
+
+document.getElementById('parallelogram-area').addEventListener('click',function(){
+    const parallelogramWidth =getElementValueById('parallelogram-base');
+    const parallelogramHeight = getElementValueById('parallelogram-height');
+    const parallelogramArea =parallelogramWidth*parallelogramHeight;
+ 
+    const tableContainer = document.getElementById('table-container');
+    const tr = document.createElement('tr');
+    tr.innerHTML=`
+    <td style="padding=2px">${1}.</td>
+    <td style="mr-2px:">parallelogram</td> 
+    <td style="margin-right:2px">${parallelogramArea} cm<sup>2</sup></td> 
+    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    `
+      tableContainer.appendChild(tr);
+})
