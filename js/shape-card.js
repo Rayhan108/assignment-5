@@ -84,3 +84,20 @@ document.getElementById('pentagon-area').addEventListener('click',function(){
     `
       tableContainer.appendChild(tr);
 })
+// ellipse area-------------------------------
+
+document.getElementById('ellipse-area').addEventListener('click',function(){
+    const ellipseValueA =getElementValueById('ellipse-value1');
+    const ellipseValueB = getElementValueById('ellipse-value2');
+    const ellipseArea =3.1416*ellipseValueA*ellipseValueB;
+ 
+    const tableContainer = document.getElementById('table-container');
+    const tr = document.createElement('tr');
+    tr.innerHTML=`
+    <td style="padding=2px">${5}.</td>
+    <td style="mr-2px:">ellipse</td> 
+    <td style="margin-right:2px">${ellipseArea} cm<sup>2</sup></td> 
+    <td style="background-color: #1090D8;padding:2px">convert to m<sup>2</sup></td>
+    `
+      tableContainer.appendChild(tr);
+})
